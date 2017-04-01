@@ -1,0 +1,53 @@
+<template>
+<scroller scroll-direction="horizontal" style="flex-direction:row;">
+  <div repeat="(index, item) in list" >
+  	<div class="div_class">
+	    <text class="text_class">
+	    	{{index}}
+	    </text>
+    <div>
+  </div>
+</scroller>
+</template>
+
+<style>
+	.text_class {
+		font-size:60px;
+		background-color:transparent;
+		color:#ffffff;
+		text-align:center;
+	},
+	.div_class {
+		width:200px;
+		height:200px;
+		background-color:#aaaa00;
+		justify-content:center;
+		border-radius:15;
+		margin:1px;
+	}
+</style>
+
+<script>
+  module.exports = {
+    data: {
+      list: 
+      [
+        'A',
+        'B',
+        'C',
+        'D',
+        'E',
+        'F'
+      ],
+      list2:
+      [
+        'H',
+        'I',
+        'J',
+        'K',
+        'L',
+        'M'
+      ]
+  	}
+  }
+</script>
